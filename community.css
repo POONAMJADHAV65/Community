@@ -1,0 +1,512 @@
+/*--------------------------------------HOME PAGE--------------------------------------------------*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  position: relative;
+  background-position: center;
+  background-size: cover;
+  min-height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(42, 42, 43, 0.7), rgba(23, 24, 25, 0.7)), url(https://images.shiksha.com/mediadata/images/1494845866phppsVdzH.jpeg)
+}
+
+marquee {
+  color: rgb(235, 45, 6);
+  font-size: 30px;
+  font-style: absolute;
+  margin-top: 2%;
+  font-weight: bolder;
+
+}
+
+nav {
+  display: flex;
+  padding: 0% 4%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav img {
+  width: 100px;
+  padding: 10px;
+}
+
+.nav-links {
+  flex: 1;
+  text-align: right;
+
+}
+
+h4 {
+  color: white;
+}
+
+.nav-links ul li {
+  list-style: none;
+  display: inline-block;
+  position: relative;
+  padding: 2px 7px;
+}
+
+.nav-links ul li a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  font-size: 19px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.nav-links ul li a::before {
+  content: '';
+  height: 1px;
+  width: 0px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  color: aliceblue;
+  background-color: white;
+  transition-duration: 1s;
+}
+
+.nav-links li a:hover::before {
+  width: 90%;
+  transition-duration: 1s;
+  background-color: rgb(139, 105, 212);
+  color: peru;
+}
+
+.text-box {
+  color: white;
+  position: absolute;
+  width: 100%;
+  font-style: italic;
+  text-align: center;
+  margin-top: 20vh;
+  font-size: larger;
+
+}
+
+.text-box h1 {
+  font-size: 50px;
+}
+
+.text-box p {
+  font-size: 20px;
+}
+
+.hero-btn {
+  text-decoration: none;
+  margin-top: 15px;
+  display: inline-block;
+  color: white;
+  border: 2px solid white;
+  padding: 12px 34px;
+  font-size: 20px;
+  background: transparent;
+  position: relative;
+  cursor: pointer;
+}
+
+.hero-btn:hover {
+  background-color: rgb(62, 19, 232);
+  transition: 2s;
+  border: 2px solid rgb(56, 30, 249);
+}
+
+nav.fa {
+display: none;
+
+}
+
+@media(max-width: 50px) {
+  .text-box h1 {
+    font-size: 20px;
+  }
+
+  .nav-links ul li {
+    display: block;
+  }
+
+  .nav-links {
+    position: absolute;
+    background: white;
+    height: 40vh;
+    width: 100px;
+    text-align: left;
+    z-index: 2;
+    top: 0;
+    right: -200px;
+
+  }
+
+  nav .fa {
+    display: block;
+    color: rgb(69, 195, 44);
+    margin: 10px;
+    cursor: pointer;
+    font-size: 20px;
+  }
+
+}
+         /*-----------------------------------------HOME1----------------------------------*/
+
+.header1 {
+  position: relative;
+  background-position: center;
+  background-size: cover;
+  min-height: 80vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(42, 42, 43, 0.7), rgba(23, 24, 25, 0.7)), url("http://www.atharvacoe.ac.in/wp-content/uploads/35.jpg")
+}
+/*-------------------------------------campus------------------------------------------------------------*/
+.Campus {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 50px;
+
+}
+
+.Campus h1 {
+  color: blue;
+  font-size: 36px;
+  font-weight: bolder;
+
+}
+
+.Campus p {
+  color: rgb(244, 244, 247);
+  font-weight: bolder;
+
+}
+
+.campus-col {
+  flex-basis: 32%;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  position: relative;
+  overflow: hidden;
+}
+
+.campus-col img {
+  width: 100%;
+}
+
+.layer {
+  background: transparent;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+}
+
+.layer:hover {
+  background: rgba(241, 206, 239, 0.7);
+  transition: 0.5s;
+}
+
+.campus-col h3 {
+  color: aliceblue;
+}
+
+.layer h3 {
+  font-weight: 500;
+  color: white;
+  width: 100%;
+  left: 50%;
+  margin-bottom: 20px;
+  transform: translateX(-50%);
+  position: absolute;
+  font-size: 20px;
+  font-weight: bolder;
+}
+
+/*-----------------------------------------------facilities------------------------------------*/
+.Facilities {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 20px;
+
+}
+
+.Facilities h1 {
+  color: peru;
+  font-size: 36px;
+  font-weight: bolder;
+
+}
+
+.Facilities p {
+  color: rgb(244, 244, 247);
+  font-weight: bolder;
+
+}
+
+.Facilities-col {
+  flex-basis: 32%;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  position: relative;
+  overflow: hidden;
+
+}
+
+.Facilities-col img {
+  width: 100%;
+
+}
+
+.layer {
+  background: transparent;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+}
+
+.layer:hover {
+  background: rgba(49, 221, 61, 0.7);
+  transition: 0.5s;
+}
+
+.Facilities-col h3 {
+  color: aliceblue;
+}
+
+.layer h3 {
+  font-weight: 500;
+  font-weight: bolder;
+  color: rgb(246, 244, 244);
+  width: 100%;
+  left: 40%;
+  margin-bottom: 20px;
+  transform: translateX(-50%);
+  position: absolute;
+  font-size: 20px;
+  font-weight: bolder;
+}
+
+/*-----------------------------------courses page----------------------------------------------*/
+
+.header2 {
+  position: relative;
+  background-position: center;
+  background-size: cover;
+  min-height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(42, 42, 43, 0.7), rgba(23, 24, 25, 0.7)), url(https://images.pexels.com/photos/3861964/pexels-photo-3861964.jpeg?auto=compress&cs=tinysrgb&w=600)
+}
+
+.course {
+  text-align: center;
+  width: 80%;
+  padding-top: 20px;
+  margin: auto;
+  font-family: 'Times New Roman', Times, serif;
+
+}
+
+.course h1 {
+  font-size: 36px;
+  font-weight: bolder;
+  color: palevioletred
+}
+
+.course h2 {
+  color: white;
+}
+
+.course p {
+  font-size: 15px;
+  font-weight: bolder;
+  line-height: 22px;
+  padding: 10px;
+  color: rgb(242, 238, 237);
+}
+
+
+.row {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.course-col p{
+  color: rgb(146, 20, 62);
+}
+
+.course-col {
+  background-color: peachpuff;
+  border-radius: 10px;
+  margin-bottom: 5px;
+  padding: 20px 12px;
+  box-sizing: border-box;
+  flex-basis: 31%;
+  
+}
+
+.course-col h3 {
+  text-align: center;
+  margin: 10px 0;
+  font-style: italic;
+  font-size: 30px;
+  color: blue;
+}
+
+.course-col:hover {
+  box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
+}
+
+.red-btn {
+  background: transparent;
+  border: 2px solid rgb(186, 46, 116);
+  color: rgb(204, 47, 170);
+  font-style: italic;
+
+}
+
+.red-btn:hover {
+  color: white;
+  background-color: orangered;
+  border: 2px solid orangered;
+}
+
+
+
+/*----------------------------------------about us----------------------------------------*/
+.sub-header {
+  position: relative;
+  background-position: center;
+  background-size: cover;
+  min-height: 80vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(42, 42, 43, 0.7), rgba(23, 24, 25, 0.7)), url("https://images.pexels.com/photos/267885/pexels-photo-267885.jpeg?auto=compress&cs=tinysrgb&w=600")
+}
+
+
+.img-slider img {
+  height: 550px;
+  width: 100%;
+}
+
+
+.about-us {
+  width: 80%;
+  margin: auto;
+  padding-top: 80px;
+  padding-bottom: 50px;
+}
+
+.about-col {
+  flex-basis: 48%;
+  padding: 30px 2px;
+}
+
+.about-col img {
+  width: 100%;
+}
+
+.about-col h3 {
+  padding-top: 10px;
+  color: rgb(233, 239, 246);
+  font-style: italic;
+  margin-left: 40px;
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+.about-us row {
+  padding: 10px;
+}
+
+.blue-btn {
+  background: transparent;
+  border: 2px solid rgb(222, 232, 235);
+  color: rgb(243, 254, 254);
+}
+
+.blue-btn:hover {
+  color: rgb(224, 128, 25);
+  background-color: rgb(46, 8, 118);
+}
+
+/*-------------------------------------------footer-----------------------------------------------------*/
+footer{  
+  display:flex;  
+ flex-direction: column;  
+background-color: black;  
+  align-items: center;  
+  color:white;  
+}  
+.footer1{  
+display:flex;  
+flex-direction: column;  
+align-items: center;  
+color:white;  
+margin-top:15px;  
+}  
+.social-media{  
+  display:flex;  
+justify-content: center;  
+color:white;  
+  flex-wrap: wrap;  
+}   
+  .social-media a{  
+      color:white;  
+     margin:20px;  
+      border-radius: 5px;  
+  margin-top:10px;  
+      color:white;  
+    }  
+  
+  .social-media a ion-icon{  
+      color:white;  
+      background-color: black;  
+    }  
+    .social-media a:hover ion-icon{  
+  color:red;  
+      transform: translateY(5px);  
+  }  
+    .footer2{  
+      display: flex;  
+      width:100%;  
+      justify-content:space-evenly;  
+      align-items: center;  
+      text-decoration: none;  
+      flex-wrap: wrap;  
+    }  
+    .footer0{  
+      font-weight:1200;  
+      transition-duration: 1s;  
+    }  
+    .footer0:hover{  
+  color:rgb(243, 168, 7);  
+    }  
+    .footer2 .heading {  
+  font-weight: 900;  
+  font-size: 18px;  
+  }  
+    .footer3 {  
+      margin-top:60px;  
+      margin-bottom: 20px;  
+  display:flex;  
+      flex-wrap: wrap;  
+      justify-content: center;  
+  }  
+    .footer2 .heading:hover{  
+  color:rgb(243, 168, 7) ;  
+    }  
+    .footer2 .div:hover{  
+   transform: scale(1.05);  
+    }  
+    .footer3 h4{  
+    margin:0 10px;  
+    }  
+    .footer2 div{  
+      margin:10px;  
+    }  
+    
